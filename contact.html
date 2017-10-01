@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Me!</title>
+
+	<!-- added a favicon to this tab w/ the link tag below -->
+	<link rel="icon" type="image/ico" sizes="16x16" href="assets/images/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+	<header>
+		<h1 class="nameBox">
+			A. Brea Torres
+		</h1>
+		<nav class="navArea">
+			<a class="navLinks" href="index.html">About</a>  |  
+			<a class="navLinks" href="portfolio.html">Portfolio</a>  |  
+			<a class="navLinks" href="contact.html">Contact</a>
+		</nav>
+	</header>
+
+	<div class="container">
+		<section class="mainContent">
+			<h1 class="mainContentHeading">
+				Contact
+			</h1>
+
+			<!-- form for the contact input / labels -->
+			<form class="contactForm">
+				<label>Name</label>
+				<br>
+				<input type="text" name="name" id="nameInput" placeholder="John Smith">
+				<br>
+				<label>Email</label>
+				<br>
+				<input type="email" name="email" id="emailInput" placeholder="example@gmail.com">
+				<br>
+				<label>Message</label>
+				<br>
+				<textarea name="message" id="messageInput" placeholder="Whatcha, Whatcha, Whatcha Want? Whatcha Want? Let me know here :)"></textarea>
+				<br>
+				<button type="button" onclick="alert('Thank You for the message!')">Submit</button>
+			</form>
+		</section>
+
+		<section class="socialContent">
+			<h1 class="socialContentHeading">
+				Connect with Me
+			</h1>
+			
+			<div class="socialImages">
+				<a href="https://github.com/abreaw" target="_blank"><img src="assets/images/if_github_square_107105.png" height="33%" width="33%" alt="GitHub Icon"></a>
+				<a href="https://www.linkedin.com/in/brea-torres-35758713/" target="_blank"><img src="assets/images/if_linkedin_square_color_107091.png" height="33%" width="33%" alt="LinkedIn Icon"></a>
+				<a href="https://stackoverflow.com/users/8464792/b-torres" target="_blank"><img id="stackOverflowIcon" src="assets/images/if_stackoverflow_273179.png" height="29.5%" width="29.5%" alt="Stack Overflow Icon"></a>
+			</div>
+
+		</section>
+	</div>
+
+	<footer class="footerArea">
+		&copy; Copyright 2017 Brea Torres
+	</footer>
+	
+</body>
+</html>
