@@ -591,9 +591,18 @@ footer
 		margin-top: 0px;		
 	}
 
-	
+	/* Adjust content on Portfolio Page */
+	/* back to two columns so back to float right */
+	.portfolioImagesRight
+	{
+		float: right;
+	}
 
-
+	/* resize images to fit back into two columns minus margins & padding to align w/ the main content heading */
+	.portfolioImages
+	{
+		width: 40%;
+	}
 	
 }
 
