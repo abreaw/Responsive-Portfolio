@@ -610,6 +610,98 @@ footer
 /* 640px is about the width of a phone in landscape mode so this area will cover that situation */
 @media screen and (max-width: 640px) 
 {
-	
+	/* Adjust Header area elements for smaller area */
+	header
+	{
+		/*position: static;*/
+		top: 0px;
+		float: left;
+	}
+
+	/* move & resize name box in header */
+	.nameBox
+	{
+		font-size: 130%; /* adjust font to smaller size */
+		text-align: center; /* center fonts in box */
+
+		/* bring name box to full length of screen */
+		clear: both;
+		display: block;
+		/*position: static;*/
+		left: 0px;
+		width: 92%;
+
+		/* adjust margins & padding to smaller size view */
+		margin-left: 0px;
+	}
+
+	/* move & resize nav area */
+	.navArea
+	{
+		font-size: 95%; /* adjust font to smaller size */
+		text-align: center; /* align menu options to center view */
+
+		/* adjust position to under name box */
+		float: left;
+		width: 95%;
+		position: static;
+		
+		margin: auto;
+		padding: 15px;
+	}
+
+	/* spread out links across full screen view */
+	.navLinks
+	{
+		padding: 0px 50px;
+	}
+
+	/* move & resize main content area */
+	.container
+	{
+		top: 109px; /* adjust top area of container to fit nav area at top now */
+	}
+
+	.mainContent
+	{
+		width: 87%;
+		
+		margin: 30px 20px;
+		margin-top: 20px;
+		padding: 20px 25px;
+		padding-bottom: 30px;
+	}
+
+	/* update padding for main content header */
+	.mainContentHeading
+	{
+		width: 100%;
+		margin-top: 10px;
+		padding: 0px;
+		padding-bottom: 20px;
+	}
+
+	/* add padding to the list for the about me page */
+	ul
+	{
+		margin-top: 15px;
+	}
+
+	/* resize picture on about page to be full size of content area */
+	#profilePic
+	{
+		width: 99%;
+		height: 300px;
+	}
+
+	/* resize social links area */
+	.socialImages
+	{
+		width: 40%;
+		margin: 0px;
+	}
+
+
+
 	
 }
