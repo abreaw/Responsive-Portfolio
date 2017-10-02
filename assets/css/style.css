@@ -388,6 +388,7 @@ footer
 		top: 35px;
 	}
 
+	/* move container to match header area */
 	.container
 	{
 		top: 76px;
@@ -427,7 +428,7 @@ footer
 	/* resize social links area */
 	.socialImages
 	{
-		display: inline-block;
+		/*display: inline-block;*/
 		/*width: 80%;*/
 		margin: 0px;
 	}
@@ -438,22 +439,26 @@ footer
 		margin-top: 10px;
 	}
 
+	/* resize picture on about page to be full size of content area */
 	#profilePic
 	{
 		width: 100%;
 		height: 250px;
 	}
 
+	/* all images float left now since they are in one column */
 	.portfolioImagesRight
 	{
 		float: left;
 	}
 
+	/* resize images to fit column minus margins & padding of the main content heading */
 	.portfolioImages
 	{
 		width: 90%;
 	}
 
+	/* adjust padding of the buttom to make it a little smaller */
 	button
 	{
 		padding: 5px 30px;
@@ -461,11 +466,134 @@ footer
 	
 }
 
-/* Check screen if width less than 768px add these styles */
+/* Check screen if width 768px or less then add these styles */
 /* 768px is about the width of a tablet so this area will cover those type of devices */
 @media screen and (max-width: 768px) 
 {
+	/* Adjust Header area elements for smaller area */
+	/* adjust header area */
+	header
+	{
+		margin: 0px; /* clear margins */
+		width: 100%; /* made width full length of window */
+	}
+
+	body
+	{
+		width: 100%;
+	}
+
+	/* move & resize name box in header */
+	.nameBox
+	{
+		font-size: 150%; /* adjust font to smaller size */
+
+		/* bring name box to left side of screen */
+		float: left; 
+		left: 0px;
+
+		/* adjust margins & padding to smaller size view */
+		margin-left: 20px;
+		padding: 21px 25px;
+	}
+
+	/* move & resize nav area */
+	.navArea
+	{
+		font-size: 95%; /* adjust font to smaller size */
+
+		float: right;
+		right: 0px;
+		top: 25px;
+
+		/*margin-bottom: 30px;*/
+		margin-right: 20px;
+	}
+
+	/* move and resize main content area */
+	/* move container to match header area */
+	.container
+	{
+		top: 68px;
+		width: 100%;
+		margin: 0px;
+	}
+
+	/* move & resize main content container */
+	.mainContent
+	{
+		width: 87%;
+		left: 0px;
+
+		margin: 30px 20px;
+		padding: 20px 25px;
+		padding-bottom: 30px;
+	}
+
+	/* update padding for main content header */
+	.mainContentHeading
+	{
+		width: 100%;
+		margin-top: 10px;
+		padding: 0px;
+		padding-bottom: 20px;
+	}
+
+	/* Adjust Social content area for smaller screen size */
+	/* resize and position social links container */
+	.socialContent
+	{
+		float: left;
+		width: 88%;
+		left: 0px;
+		/*padding: 0px 10px; */
+		margin: 10px 20px;
+		margin-bottom: 96px;
+	}
+
+	/* update padding & margins for social content header */
+	.socialContentHeading
+	{
+		margin: 10px 0px;
+		padding: 10px 0px;
+
+		text-align: left;
+	}
 	
+	/* resize social links area */
+	.socialImages
+	{
+		width: 35%;
+		margin: 0px;
+	}
+
+	/* adjust footer to full length of pages */
+	footer
+	{
+		width: 100%;
+		margin: 0px;
+	}
+
+
+	/* Adjust content on About Page */
+	/* resize picture on about page to be back to original size */
+	#profilePic
+	{
+		float: left;
+		margin-right: 20px;
+		
+		width: 250px;
+		height: 180px;
+	}
+
+	ul
+	{
+		margin-top: 0px;		
+	}
+
+	
+
+
 	
 }
 
